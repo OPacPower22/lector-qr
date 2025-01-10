@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lector de Códigos QR</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.10/html5-qrcode.min.js"></script>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Asistencia con Lector QR</h1>
+    <div id="reader" class="reader"></div>
+    <button id="stopReader">Detener Escaneo</button>
+
+    <h2>Lista de Asistencia</h2>
+    <table id="attendanceTable">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Grado</th>
+          <th>Tipo</th>
+          <th>Fecha y Hora</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <div class="report-actions">
+      <button id="generateReport">Generar Reporte</button>
+      <button id="printReport">Imprimir Reporte</button>
+    </div>
+
+    <h2>Estadísticas</h2>
+    <canvas id="attendanceChart"></canvas>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
